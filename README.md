@@ -1,42 +1,180 @@
-Superstore Sales Analysis 
+# 🏬 Superstore Sales Analysis (2019–2022)
 
-EXECUTIVE OVERVIEW:
-Superstore is a fictional retail company based in the United States. They specialize in selling furniture, office supplies, and technology products. This summer, they hired me as a Business Intelligence Analyst at their Seattle office. My role is to identify weaknesses and opportunities within their business, and my goal is to help them enhance their business growth and profitability.
+## 📌 Executive Overview
+Superstore is a fictional retail company based in the United States specializing in **Furniture, Office Supplies, and Technology**.  
+I worked as a **Business Intelligence Analyst** at the Seattle office, where my role was to identify **business weaknesses, growth opportunities, and profitability drivers** to support data-driven decision-making.
 
-Business Questions:
-Which states and cities are generating the highest revenue?
-Which product category is both the best-selling and the most profitable?
-Which product sub-categories and specific products are top performers as well as those that are underperforming?
-Are there products that are frequently bought together?
-Which customer segment is bringing in the most profit?
-What is the most preferred shipping mode among our customers?
-How has the company's performance trended over recent months?
- What are the KPIs?
-DATASET:
-The original dataset was obtained from the HiCounselor website. It contains 9993 sales transactions that occurred from 2019 to 2022. This dataset encompasses a wide range of information, including order specifics, geographical data, and product-related data. There are no missing values or any irrelevant data types and values. During the inspection process, a duplicate entry was identified and removed for accuracy. For those who are interested in viewing or downloading the refined dataset, it is available in my GitHub repository.KPIs:
-Over the past four years, Superstore generated $2.3 million in revenue but only had a gross profit of $286.41K. The company's average discount stood at 15.62%, suggesting that the discounting strategy might have influenced the profit margin. A detailed breakdown of the profit margin within the discount category will be explored later in the Financial Analysis dashboard.
-Sales by Region and state:
-The West region boasted the highest revenue, with sales amounting to $725K, followed by the East region with sales of $678K. Within those two regions, California, Washington, and New York were the top states that contributed the most revenue to the company. Therefore, the company should focus on marketing efforts and optimizing inventory in those states to further increase sales.
+This project analyzes four years of transactional sales data to uncover insights related to **revenue, profit, customer behavior, shipping preferences, and product performance**.
 
-The Central region with sales of $501K, and the South with sales of $392K, represented two regions that might have had untapped potential worth exploring.
+---
 
-Sales vs. Profit by Category and Sub-Category:
-The Technology category emerged as the leading performer in both sales and profit. Within this category, the Phones sub-category stood out with impressive sales and profit figures. On the other hand, the Furniture category showcased significant sales but had a notably lower profit margin. Within the Furniture category, the Tables displayed decent sales but operated at a loss. Additionally, both Bookcases and Supplies resulted in a negative profit for the company. These observations raise concerns, suggesting potential issues with the cost structure or pricing strategy, especially for the Tables, Bookcases, and Supplies subcategories.
-Customer Segments and Preferences
-Orders by Customer Segment: The Consumer segment was the largest customer base. Superstore should create tailored marketing campaigns targeting this segment to increase sales. The Corporate and Home Office segments with smaller customer bases, present growth opportunities with focused B2B strategies.
-Orders by Shipping Preferences: Most customers preferred Standard Class shipping, indicating that they might prioritize cost savings over faster delivery.
-Top Three Customers by Order: Raymond Buch, Sean Miler, and Tamara Chand were the most frequent shoppers with a max of 6 orders for the past 4 years. This pattern suggests a potential gap in customer loyalty. To address this, Superstore could introduce exclusive offers and a loyalty program, adjust pricing for regular customers, and actively seek their feedback to refine the shopping experience. Engaging customers through educational content on social media, newsletters, and tailored content for different segments could further foster loyalty and retention.Top Three Cities by Sales Over Time:
-Los Angeles and New York City have consistently led in sales, but while Los Angeles saw a slight decline in 2022, New York City surged. Seattle, on the other hand, experienced a significant rebound in 2022.
-Bottom Three Cities by Sales Over Time
-Philadelphia shows a promising upward trajectory, contrasting with the relatively stagnant sales in Houston and San Antonio.
-Top 10 Cities by Quantity
-New York City and Los Angeles dominate in product quantities across all categories.
-Quantity by Sub-Category and State
-Binders, Paper, and Furnishings are consistently popular across California, New York, and WashingtonSegment by Sales and Profit Over Time:
-Sales across all segments had increased year-over-year, with the Consumer segment leading the growth. The Home Office segment was smaller, yet it showed a significant increase in sales in 2022. Profit trends mirror the sales trends, but it's noteworthy that the Corporate segment's profit in 2022 didn't grow proportionally to its sales.
-Ship Mode by Sales and Profit Over Time:
-Standard Class remains the dominant shipping mode in terms of sales and profit, However, while sales for Standard Class increased in 2022, its profit decreased. First Class and Second Class have seen substantial growth in 2022.
-Profit by Segment and Category:
-The Consumer segment dominates in profit in Technology. This suggests that consumer-oriented tech products might be the most profitable items. Furniture is the least profitable category across all segments, indicating potential areas for cost optimization or pricing adjustments.
-Top 10 Cities by Orders:
-New York City and Los Angeles had the most orders, highlighting their importance to Superstore's overall sales success.
+## ❓ Business Questions
+- Which states and cities generate the highest revenue?
+- Which product category is both the best-selling and the most profitable?
+- Which product sub-categories and specific products are top performers and underperformers?
+- Are there products that are frequently bought together?
+- Which customer segment contributes the most profit?
+- What is the most preferred shipping mode?
+- How has the company’s performance trended over recent months?
+- What are the key KPIs?
+
+---
+
+## 📂 Dataset
+- **Source:** HiCounselor  
+- **Time Period:** 2019 – 2022  
+- **Total Transactions:** 9,993  
+- **Data Includes:**
+  - Order details
+  - Customer information
+  - Geographic data
+  - Product categories & sub-categories
+  - Sales, profit, discounts, and shipping modes
+
+### 🧹 Data Cleaning
+- No missing or invalid values
+- One duplicate record identified and removed
+- Final dataset is clean and analysis-ready
+
+📎 The refined dataset is available in this GitHub repository.
+
+---
+
+## 📊 Key Performance Indicators (KPIs)
+- **Total Revenue:** $2.3M  
+- **Total Profit:** $286.41K  
+- **Average Discount:** 15.62%  
+
+⚠️ Despite strong revenue, profit margins remain relatively low, indicating that discounting strategies may be impacting profitability.
+
+---
+
+## 🌍 Sales by Region & State
+- **Top Regions by Revenue**
+  - West: $725K
+  - East: $678K
+
+- **Top States**
+  - California
+  - Washington
+  - New York
+
+📈 **Insight:**  
+Marketing and inventory optimization should be prioritized in these high-performing states.
+
+- **Underperforming Regions**
+  - Central: $501K
+  - South: $392K  
+
+These regions present untapped growth opportunities.
+
+---
+
+## 🛒 Sales & Profit by Category and Sub-Category
+### Best Performers
+- **Technology** is the highest-performing category in both sales and profit
+- **Phones** sub-category leads within Technology
+
+### Underperformers
+- **Furniture** shows high sales but low profitability
+- Loss-making sub-categories:
+  - Tables
+  - Bookcases
+  - Supplies
+
+⚠️ These sub-categories indicate pricing or cost-structure issues.
+
+---
+
+## 👥 Customer Segments
+- **Consumer Segment**
+  - Largest customer base
+  - Highest sales and profit contribution
+
+- **Corporate & Home Office**
+  - Smaller customer base
+  - Growth potential with B2B-focused strategies
+
+---
+
+## 🚚 Shipping Preferences
+- **Most Preferred Shipping Mode:** Standard Class  
+  - Customers prioritize cost savings over speed
+
+⚠️ While Standard Class sales increased in 2022, profit declined.
+
+📈 **Growth Observed:**
+- First Class and Second Class shipping showed strong profit growth in 2022.
+
+---
+
+## ⭐ Customer Loyalty Insights
+- **Top Customers by Order Count (Max = 6 orders over 4 years):**
+  - Raymond Buch
+  - Sean Miller
+  - Tamara Chand
+
+🔍 **Insight:**  
+Low repeat purchase frequency suggests a customer loyalty gap.
+
+💡 **Recommendation:**
+- Introduce loyalty programs
+- Provide exclusive discounts for repeat customers
+- Collect feedback to improve customer experience
+
+---
+
+## 🏙️ City-Level Analysis
+### Top Cities by Sales Over Time
+- New York City
+- Los Angeles
+- Seattle
+
+📈 Seattle showed a strong rebound in 2022, while New York City continued strong growth.
+
+### Bottom Cities by Sales
+- Houston
+- San Antonio
+- Philadelphia (showing improvement)
+
+---
+
+## 📦 Product Quantity Insights
+- **Top Cities by Quantity Sold**
+  - New York City
+  - Los Angeles
+
+- **Most Popular Sub-Categories**
+  - Binders
+  - Paper
+  - Furnishings  
+
+Popular across California, New York, and Washington.
+
+---
+
+## 📈 Segment & Profit Trends
+- Sales increased year-over-year across all segments
+- Consumer segment led growth
+- Corporate segment sales increased in 2022, but profit did not scale proportionally
+
+---
+
+## 💡 Key Recommendations
+- Optimize pricing and cost structure for Furniture sub-categories
+- Reassess discount strategy to improve profit margins
+- Strengthen customer retention through loyalty programs
+- Expand B2B offerings for Corporate and Home Office segments
+- Invest in high-performing regions and cities
+
+---
+
+## 🛠 Tools & Technologies
+- Python
+- Pandas, NumPy
+- Power BI / Tableau (for visualization)
+- Excel
+- GitHub
+
+
+---
